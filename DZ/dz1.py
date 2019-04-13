@@ -9,6 +9,8 @@ print ("Попробуйте отгадать загаданное число! (
 while answer != EXIT :
     answer = input("---------------------------\nВведите число:")
     
+    #answer.isdigit(); - isdigit - Проверка на число
+
     try:
         answer = int(answer)
     except Exception as ex:
