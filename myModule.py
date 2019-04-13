@@ -16,3 +16,10 @@ print (multiply(4,5))
 #>> 'C:\\Python37\\lib\\this.py'
 #import os
 #os.listdir ("C:\\Python37\\lib")
+
+#num = 13
+#num.__add__(2)
+#
+#
+#print(dir(num)) - Вывод всех функций объекта num
+
