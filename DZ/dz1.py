@@ -1,15 +1,16 @@
 import random
 secret_number = random.randint(0,100) #A ≤ N ≤ B
 
-__EXIT__ = -1000
+EXIT = "exit"
 answer = -100
 
-print ("Попробуйте отгадать загаданное число! (Для выхода наберите: ", __EXIT__,")")
+print ("Попробуйте отгадать загаданное число! (Для выхода наберите: ", EXIT,")")
 
-while answer != __EXIT__ :
-    print("---------------------------\nВведите число:")
+while answer != EXIT :
+    answer = input("---------------------------\nВведите число:")
+    
     try:
-        answer = int(input())
+        answer = int(answer)
     except Exception as ex:
         print("Надо вводить числа!")
         continue
